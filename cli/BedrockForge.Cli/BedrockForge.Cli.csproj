@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Command-line tools and tests. Compiles the same Core sources as the Unity project. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>bedrockforge</AssemblyName>
+    <RootNamespace>BedrockForge.Cli</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\BedrockForge.Unity\Assets\BedrockForge\Core\**\*.cs" LinkBase="Core" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,290 @@
+/* Bedrock Forge window. Uses the editor theme variables, so it follows the light and dark skins. */
+
+.cc-panel {
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.cc-header {
+    flex-shrink: 0;
+    padding: 8px 10px 6px 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cc-title {
+    font-size: 16px;
+    -unity-font-style: bold;
+}
+
+.cc-subtitle {
+    color: var(--unity-colors-label-text-focus);
+    opacity: 0.7;
+    font-size: 11px;
+    white-space: normal;
+}
+
+.cc-tabs {
+    flex-shrink: 0;
+    flex-direction: row;
+    padding: 0 6px;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--unity-colors-default-border);
+}
+
+.cc-tab {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-radius: 0;
+    padding: 5px 9px;
+    margin: 0;
+    opacity: 0.75;
+}
+
+.cc-tab:hover {
+    opacity: 1;
+}
+
+.cc-tab--active {
+    opacity: 1;
+    border-bottom-color: rgb(58, 148, 255);
+    -unity-font-style: bold;
+}
+
+.cc-content {
+    flex-grow: 1;
+}
+
+.cc-content > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container {
+    padding: 6px 10px 14px 10px;
+}
+
+.cc-section {
+    flex-shrink: 0;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-size: 11px;
+    -unity-font-style: bold;
+    color: rgb(58, 148, 255);
+    letter-spacing: 1px;
+}
+
+.cc-hint {
+    flex-shrink: 0;
+    opacity: 0.65;
+    font-size: 11px;
+    white-space: normal;
+    margin: 2px 0 6px 0;
+}
+
+.cc-warning {
+    color: rgb(230, 160, 40);
+    white-space: normal;
+    font-size: 11px;
+}
+
+.cc-row {
+    flex-shrink: 0;
+    flex-direction: row;
+    align-items: center;
+    min-height: 22px;
+    margin: 1px 0;
+}
+
+.cc-row > .cc-label {
+    width: 40%;
+    min-width: 110px;
+    max-width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cc-row > .cc-field {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0;
+}
+
+.cc-row > .cc-xyz {
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+.cc-xyz > * {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 0 2px 0 0;
+}
+
+.cc-buttons {
+    flex-shrink: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 4px 0;
+}
+
+.cc-button {
+    flex-shrink: 0;
+    margin: 2px 4px 2px 0;
+    padding: 2px 8px;
+}
+
+.cc-button--primary {
+    background-color: rgb(40, 110, 200);
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+}
+
+.cc-button--primary:hover {
+    background-color: rgb(55, 128, 225);
+}
+
+.cc-button--danger {
+    background-color: rgb(150, 50, 50);
+    color: rgb(255, 255, 255);
+}
+
+.cc-button:disabled {
+    opacity: 0.45;
+}
+
+.cc-list-item {
+    flex-shrink: 0;
+    background-color: rgba(127, 127, 127, 0.08);
+    border-width: 0;
+    border-radius: 3px;
+    margin: 1px 0;
+    padding: 4px 8px;
+    -unity-text-align: middle-left;
+}
+
+.cc-list-item:hover {
+    background-color: rgba(127, 127, 127, 0.2);
+}
+
+.cc-list-item--selected {
+    background-color: rgba(58, 148, 255, 0.3);
+}
+
+.cc-footer {
+    flex-shrink: 0;
+    border-top-width: 1px;
+    border-top-color: var(--unity-colors-default-border);
+    padding: 6px 10px;
+}
+
+.cc-status {
+    white-space: normal;
+    font-size: 11px;
+    opacity: 0.8;
+    margin-bottom: 4px;
+}
+
+.cc-status--error {
+    color: rgb(235, 90, 80);
+    opacity: 1;
+}
+
+/* World list */
+
+.cc-card {
+    flex-shrink: 0;
+    flex-direction: row;
+    padding: 8px;
+    margin: 3px 0;
+    border-radius: 5px;
+    background-color: rgba(127, 127, 127, 0.1);
+}
+
+.cc-card:hover {
+    background-color: rgba(127, 127, 127, 0.17);
+}
+
+.cc-card-icon {
+    width: 96px;
+    height: 54px;
+    min-width: 96px;
+    border-radius: 3px;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.cc-card-info {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.cc-card-title {
+    font-size: 13px;
+    -unity-font-style: bold;
+}
+
+.cc-card-path {
+    font-size: 10px;
+    opacity: 0.45;
+}
+
+/* NBT tree */
+
+.cc-nbt-foldout > .unity-foldout__content {
+    margin-left: 12px;
+    border-left-width: 1px;
+    border-left-color: var(--unity-colors-default-border);
+    padding-left: 4px;
+}
+
+.cc-nbt-type {
+    opacity: 0.5;
+    font-size: 10px;
+    width: 26px;
+    -unity-text-align: middle-center;
+}
+
+.cc-icon-button {
+    width: 20px;
+    height: 18px;
+    padding: 0;
+    margin: 0 0 0 3px;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    opacity: 0.6;
+    -unity-text-align: middle-center;
+}
+
+.cc-icon-button:hover {
+    opacity: 1;
+    color: rgb(235, 90, 80);
+}
+
+/* Inventory grid */
+
+.cc-grid {
+    flex-shrink: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 4px 0;
+}
+
+.cc-slot {
+    width: 46px;
+    height: 46px;
+    margin: 0 3px 3px 0;
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 9px;
+    white-space: normal;
+    -unity-text-align: lower-right;
+    overflow: hidden;
+}
+
+.cc-slot--filled {
+    background-color: rgba(58, 148, 255, 0.25);
+}
+
+.cc-slot--selected {
+    border-color: rgb(58, 148, 255);
+    border-width: 2px;
+}

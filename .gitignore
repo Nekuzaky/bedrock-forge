@@ -1,0 +1,24 @@
+# Unity (generated)
+BedrockForge.Unity/[Ll]ibrary/
+BedrockForge.Unity/[Tt]emp/
+BedrockForge.Unity/[Ll]ogs/
+BedrockForge.Unity/[Oo]bj/
+BedrockForge.Unity/[Bb]uild/
+BedrockForge.Unity/[Uu]ser[Ss]ettings/
+BedrockForge.Unity/MemoryCaptures/
+BedrockForge.Unity/*.csproj
+BedrockForge.Unity/*.sln
+BedrockForge.Unity/*.slnx
+BedrockForge.Unity/*.pidb
+BedrockForge.Unity/*.booproj
+
+# .NET
+bin/
+obj/
+.vs/
+.idea/
+*.user
+
+# Local worlds used for testing (never commit someone's world)
+test-worlds/
+*.mcworld

@@ -1,0 +1,14 @@
+{
+    "name": "BedrockForge.Editor",
+    "rootNamespace": "BedrockForge.EditorTools",
+    "references": ["BedrockForge.Core", "BedrockForge.Rendering"],
+    "includePlatforms": ["Editor"],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
